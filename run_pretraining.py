@@ -191,21 +191,21 @@ class PretrainingModel(object):
     """Discriminator binary classifier."""
     with tf.variable_scope("discriminator_predictions"):
       hidden = tf.layers.dense(
-          discriminator.get_sequence_output(),
+          discriminator.get_sequence_output(),   # 即discriminator最后一层hidden state，用此来做sigmoid二分类
           units=self._bert_config.hidden_size,
           activation=modeling.get_activation(self._bert_config.hidden_act),
           kernel_initializer=modeling.create_initializer(
               self._bert_config.initializer_range))
-      logits = tf.squeeze(tf.layers.dense(hidden, units=1), -1)
-      weights = tf.cast(inputs.input_mask, tf.float32)
+      logits = tf.squeeze(tf.layers.dense(hidden, units=1), -1)   # 其实这个discriminator的输出后面又接了两个dense层，然后再将结果输入sigmoid层
+      weights = tf.cast(inputs.input_mask, tf.float32)     # 看看这里到底是咋回事，weight是怎么来的
       labelsf = tf.cast(labels, tf.float32)
-      losses = tf.nn.sigmoid_cross_entropy_with_logits(
+      losses = tf.nn.sigmoid_cross_entropy_with_logits(    # 注意这里！笑了，原来计算交叉熵loss直接输入原始x就够了，而不是输入算好的sigmoid(x)!!
           logits=logits, labels=labelsf) * weights
       per_example_loss = (tf.reduce_sum(losses, axis=-1) /
                           (1e-6 + tf.reduce_sum(weights, axis=-1)))
       loss = tf.reduce_sum(losses) / (1e-6 + tf.reduce_sum(weights))
-      probs = tf.nn.sigmoid(logits)
-      preds = tf.cast(tf.round((tf.sign(logits) + 1) / 2), tf.int32)
+      probs = tf.nn.sigmoid(logits)                               # 这里是sigmoid层，input logits可看作NN的final hidden state
+      preds = tf.cast(tf.round((tf.sign(logits) + 1) / 2), tf.int32)    # 进行0.5的结果切分——大于0.5输出1，小于0.5输出0
       DiscOutput = collections.namedtuple(
           "DiscOutput", ["loss", "per_example_loss", "probs", "preds",
                          "labels"])
