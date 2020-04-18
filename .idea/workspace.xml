@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8b166b7-df10-4354-b328-05d663d82f0d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/configure_finetuning.py" beforeDir="false" afterPath="$PROJECT_DIR$/configure_finetuning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_finetuning.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_finetuning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_pretraining.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_pretraining.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/run_classifier_qqp.sh" beforeDir="false" afterPath="$PROJECT_DIR$/script/run_classifier_qqp.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +20,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/optimization.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
+            <state relative-caret-position="1020">
               <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
               <folding>
                 <element signature="e#798#836#0" expanded="true" />
@@ -34,7 +32,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_finetuning.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="724">
+            <state relative-caret-position="5168">
               <caret line="320" column="48" selection-start-line="320" selection-start-column="48" selection-end-line="320" selection-end-column="48" />
             </state>
           </provider>
@@ -43,7 +41,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/modeling.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
+            <state relative-caret-position="748">
               <caret line="44" column="31" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="31" />
               <folding>
                 <element signature="e#721#759#0" expanded="true" />
@@ -52,7 +50,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/configure_finetuning.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="684">
@@ -64,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/run_classifier_qqb.sh">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/script/run_classifier_qqp.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="52" />
+            <state relative-caret-position="147">
+              <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -93,18 +91,21 @@
         <option value="$PROJECT_DIR$/configure_finetuning.py" />
         <option value="$PROJECT_DIR$/run_finetuning.py" />
         <option value="$PROJECT_DIR$/script/run_classifier_qqb.sh" />
+        <option value="$PROJECT_DIR$/script/run_classifier_qqp.sh" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="867" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="987" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -115,13 +116,17 @@
             <path>
               <item name="electra" type="b2602c69:ProjectViewProjectNode" />
               <item name="electra" type="462c0819:PsiDirectoryNode" />
+              <item name="script" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="electra" type="b2602c69:ProjectViewProjectNode" />
+              <item name="electra" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -155,17 +160,18 @@
       <updated>1586316422772</updated>
       <workItem from="1586316424064" duration="3597000" />
       <workItem from="1587119593196" duration="3579000" />
+      <workItem from="1587198588275" duration="101000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7176000" />
+    <option name="totallyTimeSpent" value="7277000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="867" height="1080" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.18849841" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1373802" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -219,19 +225,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/optimization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
-          <folding>
-            <element signature="e#798#836#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/configure_pretraining.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -242,27 +235,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/modeling.py">
+    <entry file="file://$PROJECT_DIR$/script/run_classifier_qqb.sh" />
+    <entry file="file://$PROJECT_DIR$/model/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/optimization.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="44" column="31" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="31" />
+        <state relative-caret-position="1020">
+          <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
           <folding>
-            <element signature="e#721#759#0" expanded="true" />
+            <element signature="e#798#836#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/run_finetuning.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="724">
+        <state relative-caret-position="5168">
           <caret line="320" column="48" selection-start-line="320" selection-start-column="48" selection-end-line="320" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/run_classifier_qqb.sh">
+    <entry file="file://$PROJECT_DIR$/model/modeling.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="52" />
+        <state relative-caret-position="748">
+          <caret line="44" column="31" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="31" />
+          <folding>
+            <element signature="e#721#759#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -273,6 +273,13 @@
           <folding>
             <element signature="e#675#713#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/run_classifier_qqp.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
         </state>
       </provider>
     </entry>
