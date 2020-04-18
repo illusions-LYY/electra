@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8b166b7-df10-4354-b328-05d663d82f0d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/script/run_classifier_qqp.sh" beforeDir="false" afterPath="$PROJECT_DIR$/script/run_classifier_qqp.sh" afterDir="false" />
-    </list>
+    <list default="true" id="d8b166b7-df10-4354-b328-05d663d82f0d" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,12 +158,12 @@
       <updated>1586316422772</updated>
       <workItem from="1586316424064" duration="3597000" />
       <workItem from="1587119593196" duration="3579000" />
-      <workItem from="1587198588275" duration="101000" />
+      <workItem from="1587198588275" duration="259000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7277000" />
+    <option name="totallyTimeSpent" value="7435000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
